@@ -1,16 +1,41 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>최예린의 포트폴리오 입니다.</title>
-        <meta charset="utf-8">
-    </head>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<html lang="en">
+<head>
+    <title>최예린의 포트폴리오 입니다.</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="assets/themes/default/default.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="assets/themes/light/light.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="assets/themes/dark/dark.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="assets/themes/bar/bar.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="assets/themes/nivo-slider.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="style.css" type="text/css" media="screen" />
+</head>
+<body>
+    <div id="wrapper">
+        <img src="./assets/images/profile2.png" width="100px">
+        <p>Go to the <a href="https://github.com/Yerin00/Choiyerin" target="_blank">Github page</a></p>
 
-    <body>
-        <div>
-            <img src="./assets/images/profile2.png" width="200px">
-            <h1>최예린의 포트폴리오 입니다.</h1>
-            <h2>Portfolio of Choiyerin</h2>
-            <a href="https://github.com/Yerin00/Choiyerin" target="_blank" title="github for this website"></a>
+        <div class="slider-wrapper theme-default">
+            <div id="slider" class="nivoSlider">
+                <img src="assets/images/toystory.jpg" data-thumb="assets/images/toystory.jpg" alt="" />
+                <a href="http://dev7studios.com"><img src="assets/images/up.jpg" data-thumb="assets/images/up.jpg" alt="" title="This is an example of a caption" /></a>
+                <img src="assets/images/walle.jpg" data-thumb="assets/images/walle.jpg" alt="" data-transition="slideInLeft" />
+                <img src="assets/images/nemo.jpg" data-thumb="assets/images/nemo.jpg" alt="" title="#htmlcaption" />
+            </div>
+            <div id="htmlcaption" class="nivo-html-caption">
+                <strong>This</strong> is an example of a <em>HTML</em> caption with <a href="#">a link</a>. 
+            </div>
         </div>
-    </body>
+
+    </div>
+    
+    <script type="text/javascript" src="assets/src/jquery-1.9.0.min.js"></script>
+    <script type="text/javascript" src="assets/src/jquery.nivo.slider.js"></script>
+    <script type="text/javascript">
+    $(window).load(function() {
+        $('#slider').nivoSlider();
+    });
+    </script>
+</body>
 </html>
